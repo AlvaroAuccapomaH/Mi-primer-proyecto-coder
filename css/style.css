@@ -1,0 +1,397 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* rem = 10px */
+  font-size: 62.5%;
+  font-family: "Open Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+img {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+}
+
+.titulo {
+  color: #ff0000;
+}
+
+.titulo p {
+  font-size: 3.1rem;
+}
+/***** HEADER ******/
+header .header1 {
+  display: flex;
+  background-color: #000;
+  color: #fff;
+  height: 6rem;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+header .header2 {
+  display: flex;
+  background-color: #173083;
+  color: #fff;
+  height: 6rem;
+  justify-content: space-around;
+  align-items: center;
+}
+
+header p {
+  font-size: 2.1rem;
+  font-weight: 800;
+}
+
+.logo1,
+.logo2 {
+  display: flex;
+  align-items: center;
+}
+
+.logo1 img {
+  width: 70%;
+  height: 7rem;
+  padding-right: 2rem;
+}
+
+.logo2 img {
+  width: 70%;
+  height: 8rem;
+  padding: 2rem;
+}
+
+.linea-vertical {
+  width: 0.2rem;
+  height: 4rem;
+  background-color: #fff;
+}
+
+/********** MAIN ********/
+main {
+  background-image: url(../img/FONDO.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 53rem;
+  width: 100%;
+}
+.container {
+  display: flex;
+  gap: 2rem;
+  width: 100%;
+  height: 53rem;
+}
+
+.imagen-hamburguesa img {
+  height: 100%;
+  width: 100%;
+}
+
+.imagen-hamburguesa {
+  width: 70%;
+}
+
+.texto {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+
+.texto p {
+  font-size: 2.7rem;
+  font-weight: 800;
+}
+
+.texto img {
+  width: 80%;
+  height: 24rem;
+}
+
+/********** FOOTER ********/
+
+footer {
+  background-color: #173083;
+  color: #fff;
+  height: auto;
+}
+
+footer section {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.footer1 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.footer2 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+.contenedor-pagina {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+}
+
+.pages1 {
+  display: flex;
+  gap: 10rem;
+  padding: 1rem 0;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-logo img {
+  width: 16rem;
+  height: 100%;
+  padding: 0rem;
+}
+
+.footer1 a:hover {
+  cursor: pointer;
+  color: #f2542d;
+}
+
+.footer-iconos {
+  margin-top: 4rem;
+}
+
+.footer-iconos img {
+  padding-right: 4rem;
+  width: 10rem;
+}
+
+.footer-separacion {
+  height: 0.3rem;
+  width: 90%;
+  background-color: #000;
+  margin: auto;
+}
+.copyright {
+  height: 100%;
+  text-align: center;
+  padding-bottom: 0.6rem;
+}
+
+.copyright p {
+  font-size: 1.8rem;
+}
+
+/*****   PAGINA NOSOTROS  *****/
+
+main.contenedor-nosotros,
+main.contenedor-politicas,
+main.contenedor-terminos,
+main.contenedor-inicioSesion {
+  background-image: none;
+}
+
+.titulo-nosotros p {
+  padding: 1rem 1rem 1rem 4rem;
+  font-size: 1.8rem;
+}
+
+.container-nosotros {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  height: 48.3rem;
+  padding: 1rem 0;
+}
+
+.imagen-nosotros {
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.imagen-nosotros img {
+  border-radius: 0.8rem;
+  width: 40rem;
+  height: 40rem;
+}
+
+.texto-nosotros {
+  font-size: 1.8rem;
+  padding: 2rem 5rem 0rem 0rem;
+  font-weight: 500;
+}
+
+.texto-nosotros p {
+  line-height: 4rem;
+}
+
+/**** POLITICAS DELIVERY *****/
+.contenedor-politicas .horario {
+  text-align: center;
+  width: 50rem;
+  margin: auto;
+}
+.contenedor-politicas ol {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  padding: 0;
+}
+
+li {
+  text-align: right;
+}
+.first-day {
+  grid-column-start: 3;
+}
+
+.day-name {
+  background: #eee;
+  font-weight: bold;
+}
+
+.contenedor-politicas p {
+  font-size: 1.8rem;
+  padding: 1rem 4rem;
+}
+
+.contenedor-politicas > div {
+  height: auto;
+}
+
+.horario h1 {
+  font-size: 3rem;
+}
+
+.horario li {
+  font-size: 2rem;
+}
+
+/******** TERMINOS Y CONDICIONES ******/
+
+.contenedor-terminos p {
+  font-size: 1.5rem;
+  padding: 5rem;
+  line-height: 3rem;
+}
+
+/******** INICIO-SESION ******/
+
+.inicioSesion {
+  display: flex;
+  flex-direction: row;
+}
+.inicioSesion,
+.imagen-inicioSesion,
+.imagen-izquierda {
+  height: 100%;
+}
+
+.imagen-inicioSesion,
+.formulario-inicio {
+  width: 50%;
+}
+
+.imagen-inicioSesion img {
+  width: 100%;
+}
+
+.formulario-inicio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.formulario-inicio h1 {
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+.grupo_input {
+  background: #d9d9d9;
+  margin: 1.8rem 0;
+  z-index: 1;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.grupo_input i {
+  padding: 1rem;
+  font-size: 2rem;
+}
+
+.grupo_input input {
+  background: #d9d9d9;
+  font-weight: 900;
+  padding: 1rem;
+  color: #000;
+  text-decoration: none;
+  outline: 0;
+}
+
+.formulario-inicio a {
+  padding: 1.5rem;
+  border-radius: 1rem;
+  font-weight: 800;
+  font-size: 1.8rem;
+  width: 20rem;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.ingresar {
+  background-color: #173083;
+}
+
+.registrarse {
+  background-color: #fbb905;
+}
+
+/***  CREACION DE CUENTA ***/
+
+form {
+  text-align: center;
+}
+
+input[type="submit"] {
+  background-color: #fbb905;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  font-weight: 800;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  color: #fff;
+}
