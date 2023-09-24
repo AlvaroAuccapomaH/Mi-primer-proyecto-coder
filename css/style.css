@@ -45,6 +45,7 @@ header .header1 {
 
 header .header2 {
   display: flex;
+  width: 100%;
   background-color: #173083;
   color: #fff;
   height: 6rem;
@@ -328,6 +329,7 @@ li {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  text-align: center;
 }
 .formulario-inicio h1 {
   text-transform: uppercase;
@@ -394,4 +396,183 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
   color: #fff;
+}
+
+@media (max-width: 390px) {
+  /* HEADER */
+  header p {
+    font-size: 1.5rem;
+    font-weight: 800;
+  }
+  header .header2 {
+    justify-content: normal;
+  }
+  .logo1 img {
+    padding-right: 0rem;
+  }
+
+  /* MAIN */
+  main .container {
+    display: grid;
+    gap: 0;
+    grid-template-rows: 20% 80%;
+  }
+
+  .imagen-hamburguesa {
+    width: 100%;
+    grid-row: 2/2;
+    height: 100%;
+  }
+
+  .texto {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    height: 100%;
+  }
+
+  .texto p {
+    font-size: 1.5rem;
+  }
+
+  .texto img {
+    width: 50%;
+    height: 10rem;
+  }
+  /* FOOTER */
+  footer section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .footer1 {
+    margin: auto;
+  }
+
+  .pages1 {
+    gap: 5rem;
+  }
+
+  .footer-logo {
+    gap: 4rem;
+  }
+  .footer-logo img {
+    width: 10rem;
+  }
+
+  .footer2 {
+    margin: auto;
+  }
+  .footer-iconos {
+    margin-top: 1rem;
+  }
+
+  /* NOSOTROS */
+  .nosotros .logo1 img {
+    width: 40%;
+    height: 7rem;
+  }
+
+  .nosotros .titulo p {
+    font-size: 2rem;
+  }
+
+  .nosotros .logo1 {
+    width: 13rem;
+  }
+  .container-nosotros {
+    display: grid;
+    height: 48.3rem;
+    grid-template-columns: none;
+  }
+
+  .texto-nosotros {
+    position: absolute;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .texto-nosotros p {
+    line-height: 1.8rem;
+    color: white;
+  }
+
+  .imagen-nosotros img {
+    border-radius: 0.8rem;
+    width: 100%;
+    height: 100%;
+    /* -webkit-filter: contrast(80%); */
+    filter: brightness(0.6);
+  }
+
+  /* POLITICAS DE DELIVERY */
+
+  .header2 .politicas p {
+    font-size: 1.4rem;
+    line-height: 2rem;
+  }
+  .logo2 img {
+    width: 41%;
+    height: 9rem;
+    padding: 1rem;
+  }
+
+  .nosotros .titulo {
+    text-align: center;
+  }
+
+  .contenedor-politicas p {
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+  }
+
+  .contenedor-politicas .horario {
+    width: 80%;
+  }
+
+  /******** TERMINOS Y CONDICIONES ******/
+  .contenedor-terminos {
+    overflow: scroll;
+  }
+
+  .contenedor-terminos p {
+    font-size: 1.5rem;
+    padding: 1rem;
+    line-height: 1.2rem;
+  }
+
+  /*INICIO SESION*/
+  .grupo_input {
+    width: 88%;
+    display: flex;
+  }
+
+  .grupo_input input {
+    width: 100%;
+  }
+
+  .formulario-inicio a {
+    width: 16rem;
+  }
+
+  /***  CREACION DE CUENTA ***/
+  form {
+    text-align: center;
+    align-items: center;
+    /* justify-content: center; */
+    display: flex;
+    flex-direction: column;
+  }
+
+  form.creacion .grupo_input {
+    margin: 1rem 0;
+    text-align: center;
+    align-items: center;
+  }
 }
