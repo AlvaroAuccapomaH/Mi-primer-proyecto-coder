@@ -1,0 +1,32 @@
+@mixin headerFlex($color, $altura, $bgc, $justifyC, $alignI) {
+    display: flex;
+    background-color: $bgc;
+    color: $color;
+    height: $altura;
+    justify-content: $justifyC;
+    align-items: $alignI;
+}
+
+@mixin flexcenterTexto {
+    display: flex;
+    align-items: center;
+}
+
+@mixin dimensiones($ancho, $altura, $padding) {
+    width: $ancho;
+    height: $altura;
+    padding: $padding;
+}
+
+@mixin texto($size, $weight) {
+    font-size: $size;
+    font-weight: $weight;
+}
+
+@mixin footerFlex($tAlignI, $direction, $justifyC, $alingI) {
+    display: flex;
+    text-align: $tAlignI;
+    flex-direction: $direction;
+    justify-content: $justifyC;
+    align-items: $alingI;
+}

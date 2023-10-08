@@ -1,0 +1,77 @@
+header {
+    .header1 {
+        @include headerFlex($colorWhite, 6rem, $colorNegro, space-evenly, center);
+        .linea-vertical {
+            @include dimensiones(0.2rem, 4rem, 0);
+            background-color: $colorWhite;
+        }
+    }
+    .header3 {
+        width: 100%;
+        background-color: $colorAzul !important;
+        color: $colorWhite !important;
+        .logo1 {
+            display: flex;
+            align-items: center;
+            img {
+                @include dimensiones(70%, 7rem, 0 2rem 0 0);
+            }
+        }
+        .logo2 {
+            display: flex;
+            align-items: center;
+            img {
+                @include dimensiones(70%, 8rem, 2rem);
+            }
+        }
+    }
+    a {
+        color: $colorWhite !important;
+        font-size: 3.2rem !important;
+        padding-right: 6rem !important;
+        &:hover {
+            color: $amarillo !important;
+        }
+    }
+    p {
+        @include texto(2.1rem, 800);
+    }
+
+    .separacion {
+        justify-content: space-around;
+        text-align: center !important;
+        justify-content: center;
+        align-items: center !important;
+    }
+    .active {
+        color: $colorRojo !important;
+    }
+    /*     .header2 {
+        @include headerFlex($colorWhite, 6rem, $colorAzul, space-around, center);
+        width: 100%;
+        div {
+            @include flexcenterTexto;
+        }
+        .logo1 {
+            a {
+                &:hover {
+                    color: $amarillo;
+                }
+            }
+            img {
+                @include dimensiones(70%, 7rem, 0 2rem 0 0);
+            }
+        }
+        .logo2 {
+            a {
+                &:hover {
+                    color: $amarillo;
+                }
+            }
+            img {
+                @include dimensiones(70%, 8rem, 2rem);
+            }
+        }
+    }
+    } */
+}

@@ -1,0 +1,32 @@
+main {
+    background-image: url(../img/FONDO.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    @include dimensiones(100%, 53rem, 0);
+    .container {
+        display: flex;
+        gap: 2rem;
+        @include dimensiones(100%, 53rem, 0);
+        .imagen-hamburguesa {
+            width: 70%;
+        }
+        .imagen-hamburguesa img {
+            @include dimensiones(100%, 100%, 0);
+        }
+        .texto {
+            width: 30%;
+            @include flexcenterTexto;
+            flex-direction: column;
+            justify-content: center;
+            gap: 5rem;
+        }
+
+        p {
+            @include texto(2.7rem, 800);
+        }
+        img {
+            @include dimensiones(80%, 24rem, 0);
+        }
+    }
+}

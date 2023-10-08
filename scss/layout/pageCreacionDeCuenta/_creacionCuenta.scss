@@ -1,0 +1,15 @@
+form {
+    text-align: center;
+    input[type="submit"] {
+        background-color: $amarillo;
+        padding: 1.5rem;
+        border-radius: 1rem;
+        font-weight: 800;
+        font-size: 1.8rem;
+        transition: color 1s;
+        cursor: pointer;
+        &:hover {
+            color: $colorWhite;
+        }
+    }
+}

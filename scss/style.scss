@@ -1,0 +1,22 @@
+//LLAMAR VARIABLES
+@import "./utilidades/variables";
+@import "./utilidades/mixins";
+
+// LLAMAR RESET
+@import "./base/reset";
+@import "./utilidades/util";
+//LLAMAR COMPONENTES
+
+//LLAMAR LAYOUT
+@import "./layout/pageIndex/index";
+@import "./layout/pageIndex/header";
+@import "./layout/pageIndex/main";
+@import "./layout/pageIndex/footer";
+@import "./layout/pageNosotros/nosotros";
+@import "./layout/pagePoliticasDelivery/politicasDelivery";
+@import "./layout/pageTerminosCondiciones/terminosCondiciones";
+@import "./layout/pageInicioSesion/inicioSesion";
+@import "./layout/pageCreacionDeCuenta/creacionCuenta";
+@import "./componentes/galeriaMenu";
+@import "./layout/pageResponsiveTablet/responsiveTablet.scss";
+@import "./layout/pageResponsiveCelular/responsiveCelular";

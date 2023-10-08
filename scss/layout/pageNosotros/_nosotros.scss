@@ -1,0 +1,30 @@
+.contenedor-nosotros {
+    .titulo-nosotros {
+        p {
+            padding: 1rem 1rem 1rem 4rem;
+            font-size: 1.8rem;
+        }
+    }
+    .container-nosotros {
+        display: grid;
+        grid-template-columns: 40% 60%;
+        height: 48.3rem;
+        padding: 1rem 0;
+        .imagen-nosotros {
+            height: auto;
+            display: flex;
+            justify-content: center;
+            img {
+                border-radius: 0.8rem;
+                @include dimensiones(40rem, 40rem, 0);
+            }
+        }
+        .texto-nosotros {
+            @include texto(1.8rem, 500);
+            padding: 2rem 5rem 0rem 0rem;
+            p {
+                line-height: 4rem;
+            }
+        }
+    }
+}

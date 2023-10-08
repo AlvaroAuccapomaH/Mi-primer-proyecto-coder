@@ -9,9 +9,13 @@
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700;800&display=swap"
         rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/479c71e42b.js" crossorigin="anonymous"></script>
 </head>
+
 
 <body>
     <header>
@@ -24,21 +28,32 @@
                 <p>Delivery: Hasta las 11pm* <br />Recojo en tienda: Hasta las 9pm*</p>
             </div>
         </section>
-        <section class="header2 nosotros">
-            <div class="logo1">
-                <img src="../img/logoCocoBurger.png" alt="logoCocoBurger" />
-                <a href="../index.html">
-                    <p>CoCo's <br />BURGER</p>
-                </a>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary header3">
+            <div class="container-fluid ">
+                <div class="logo1">
+                    <img src="../img/logoCocoBurger.png" alt="logoCocoBurger" />
+                    <a class="navbar-brand " href="../index.html">
+                        <p>CoCo's <br />BURGER</p>
+                    </a>
+                </div>
+                <button style="background-color: white !important;" class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse separacion" id="navbarNavAltMarkup">
+                    <div class="navbar-nav ">
+                        <a class="nav-link " aria-current="page" href="../pages/nosotros.html">Nosotros</a>
+                        <a class="nav-link " href="../pages/politicasDeDelivery.html">Politicas</a>
+                        <a class="nav-link active" href="../pages/terminosCondiciones.html">Terminos y Codiciones</a>
+                        <div class="logo2">
+                            <img src="../img/person.svg" alt="person" />
+                            <p><a href="../pages/inicioSesion.html">INGRESAR</a></p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="titulo politicas" style="width: 40%;">
-                <p>Terminos y Condiciones de la Web</p>
-            </div>
-            <div class="logo2">
-                <img src="../img/person.svg" alt="person" />
-                <p><a href="../pages/inicioSesion.html">INGRESAR</a></p>
-            </div>
-        </section>
+        </nav>
     </header>
 
 
@@ -123,9 +138,13 @@
         <div class="copyright">
             <p>2023 Todos los derechos resevados</p>
         </div>
-
-
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

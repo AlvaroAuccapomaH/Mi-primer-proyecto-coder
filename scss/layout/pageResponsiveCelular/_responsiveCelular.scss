@@ -1,0 +1,210 @@
+@media (max-width: 391px) and (min-width: 319px) {
+    /* HEADER */
+    header {
+        .header1 {
+            height: 6rem;
+        }
+        p {
+            @include texto(1.3rem, 800);
+        }
+        .header3 {
+            .logo1 {
+                img {
+                    padding: 0 !important;
+                }
+                a {
+                    padding: 0 !important;
+                }
+            }
+            button {
+                margin-right: 3rem !important;
+            }
+            .navbar-nav {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-self: center;
+                a {
+                    padding: 0 !important;
+                    font-size: 2rem !important;
+                    margin-bottom: 1rem;
+                }
+            }
+            .logo2 {
+                width: auto !important;
+            }
+        }
+    }
+    /* MAIN */
+    main {
+        .container {
+            display: grid;
+            gap: 0;
+            grid-template-rows: 20% 80%;
+            .imagen-hamburguesa {
+                width: 100%;
+                grid-row: 2/2;
+                height: 100%;
+            }
+            .texto {
+                width: 100%;
+                flex-direction: row;
+                gap: 1rem;
+                p {
+                    @include texto(1.5rem, 800);
+                    color: $colorWhite;
+                }
+                img {
+                    width: 40%;
+                    height: 10rem;
+                }
+            }
+        }
+    }
+    /* FOOTER */
+    footer {
+        section {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 1rem;
+            .footer2 {
+                margin: auto;
+                p {
+                    padding-top: 2rem;
+                }
+                .footer-iconos {
+                    display: flex;
+                    margin: 3rem 0;
+                    align-items: center;
+                    img {
+                        padding: 1rem;
+                    }
+                }
+            }
+        }
+    }
+    /* NOSOTROS */
+    main {
+        &.contenedor-nosotros {
+            .container-nosotros {
+                height: 48.3rem;
+                grid-template-columns: none;
+                .imagen-nosotros {
+                    img {
+                        border-radius: 0.8rem;
+                        width: 100%;
+                        height: 100%;
+                        /* -webkit-filter: contrast(80%); */
+                        filter: brightness(0.6);
+                    }
+                }
+                .texto-nosotros {
+                    position: absolute;
+                    padding: 1rem;
+                    text-align: center;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    p {
+                        line-height: 1.8rem;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+    /* POLITICAS DE DELIVERY */
+    main {
+        &.contenedor-politicas {
+            overflow: scroll;
+            p {
+                font-size: 1.2rem;
+                padding: 1rem 2rem;
+            }
+            .horario {
+                width: 80%;
+            }
+        }
+    }
+    /******** TERMINOS Y CONDICIONES ******/
+    .contenedor-terminos {
+        overflow: scroll;
+        p {
+            font-size: 1.5rem;
+            padding: 1rem;
+            line-height: 1.2rem;
+        }
+    }
+    /*INICIO SESION*/
+    main {
+        &.contenedor-inicioSesion {
+            .inicioSesion {
+                .formulario-inicio {
+                    .grupo_input {
+                        width: 88%;
+                        display: flex;
+                        input {
+                            width: 100%;
+                        }
+                    }
+                    a {
+                        width: 13rem;
+                    }
+                }
+            }
+        }
+    }
+    /***  CREACION DE CUENTA ***/
+    main {
+        &.contenedor-inicioSesion {
+            .inicioSesion {
+                .formulario-inicio {
+                    form {
+                        text-align: center;
+                        align-items: center;
+                        /* justify-content: center; */
+                        display: flex;
+                        flex-direction: column;
+                        &.creacion {
+                            .grupo_input {
+                                margin: 1rem 0;
+                                text-align: center;
+                                align-items: center;
+                                width: 77%;
+                                i {
+                                    padding: 0.5rem !important;
+                                }
+                                input {
+                                    padding: 0.5rem !important;
+                                }
+                            }
+                        }
+                        input[type="submit"] {
+                            padding: 0.5rem !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    /*MENUHAMBURGUESA*/
+    .contenedor-terminos2 {
+        padding: 1rem;
+    }
+    section {
+        &.galeria {
+            .contenedor-galeria {
+                grid-template-columns: repeat(1, 1fr);
+                div {
+                    height: 30rem;
+                }
+            }
+        }
+    }
+
+    footer .footer1 {
+        display: none !important;
+    }
+}

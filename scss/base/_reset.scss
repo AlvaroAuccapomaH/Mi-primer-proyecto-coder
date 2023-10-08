@@ -1,0 +1,26 @@
+//GLOBALES
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html {
+    /* rem = 10px */
+    font-size: 62.5%;
+    font-family: $font;
+}
+
+a {
+    text-decoration: none !important;
+    color: $colorWhite !important;
+}
+
+img {
+    padding: 0;
+    margin: 0;
+}
+p {
+    margin: 0;
+}

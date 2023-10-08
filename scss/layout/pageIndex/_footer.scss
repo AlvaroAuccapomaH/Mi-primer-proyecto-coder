@@ -1,0 +1,58 @@
+footer {
+    background-color: $colorAzul;
+    color: $colorWhite;
+    height: auto;
+    section {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        @include texto(2rem, 700);
+        .footer1 {
+            @include footerFlex(center, column, none, center);
+            gap: 0.5rem;
+            .contenedor-pagina {
+                @include footerFlex(none, column, none, center);
+                height: auto;
+                .pages1 {
+                    display: flex;
+                    gap: 10rem;
+                    padding: 1rem 0;
+                }
+            }
+            .footer-logo {
+                @include footerFlex(none, none, center, center);
+                img {
+                    @include dimensiones(16rem, 100%, 0rem);
+                }
+            }
+            a {
+                &:hover {
+                    cursor: pointer;
+                    color: $colorNaranja !important;
+                }
+            }
+        }
+        .footer2 {
+            @include footerFlex(center, column, center, none);
+            .footer-iconos {
+                margin-top: 4rem;
+                img {
+                    padding-right: 4rem;
+                    width: 10rem;
+                }
+            }
+        }
+    }
+    .footer-separacion {
+        @include dimensiones(90%, 0.3rem, 0);
+        background-color: #000;
+        margin: auto;
+    }
+    .copyright {
+        height: 100%;
+        text-align: center;
+        padding-bottom: 0.6rem;
+        p {
+            font-size: 1.8rem;
+        }
+    }
+}
